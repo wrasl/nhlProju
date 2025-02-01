@@ -1,49 +1,5 @@
 [
     {
-        "name": "Jani Hakanp\u00e4\u00e4",
-        "sweater_number": 28,
-        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/TOR/8475825.png",
-        "position": "D",
-        "season_2024_2025": {
-            "assists": 0,
-            "gameWinningGoals": 0,
-            "gamesPlayed": 2,
-            "goals": 0,
-            "otGoals": 0,
-            "pim": 0,
-            "plusMinus": -1,
-            "points": 0,
-            "powerPlayGoals": 0,
-            "powerPlayPoints": 0,
-            "shootingPctg": 0.0,
-            "shorthandedGoals": 0,
-            "shorthandedPoints": 0,
-            "shots": 2
-        }
-    },
-    {
-        "name": "Juha Jaaska",
-        "sweater_number": 54,
-        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/CAR/8484929.png",
-        "position": "L",
-        "season_2024_2025": {
-            "assists": 1,
-            "gameWinningGoals": 0,
-            "gamesPlayed": 12,
-            "goals": 0,
-            "otGoals": 0,
-            "pim": 4,
-            "plusMinus": 1,
-            "points": 1,
-            "powerPlayGoals": 0,
-            "powerPlayPoints": 0,
-            "shootingPctg": 0.0,
-            "shorthandedGoals": 0,
-            "shorthandedPoints": 0,
-            "shots": 10
-        }
-    },
-    {
         "name": "Erik Haula",
         "sweater_number": 56,
         "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/NJD/8475287.png",
@@ -66,28 +22,6 @@
         }
     },
     {
-        "name": "Kasperi Kapanen",
-        "sweater_number": 42,
-        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/EDM/8477953.png",
-        "position": "R",
-        "season_2024_2025": {
-            "assists": 4,
-            "gameWinningGoals": 2,
-            "gamesPlayed": 37,
-            "goals": 6,
-            "otGoals": 0,
-            "pim": 10,
-            "plusMinus": -10,
-            "points": 10,
-            "powerPlayGoals": 0,
-            "powerPlayPoints": 0,
-            "shootingPctg": 0.153846,
-            "shorthandedGoals": 0,
-            "shorthandedPoints": 0,
-            "shots": 39
-        }
-    },
-    {
         "name": "Sebastian Aho",
         "sweater_number": 20,
         "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/CAR/8478427.png",
@@ -95,40 +29,62 @@
         "season_2024_2025": {
             "assists": 34,
             "gameWinningGoals": 5,
-            "gamesPlayed": 50,
-            "goals": 16,
+            "gamesPlayed": 51,
+            "goals": 17,
             "otGoals": 4,
-            "pim": 32,
-            "plusMinus": -4,
-            "points": 50,
+            "pim": 34,
+            "plusMinus": -2,
+            "points": 51,
             "powerPlayGoals": 2,
             "powerPlayPoints": 17,
-            "shootingPctg": 0.118519,
+            "shootingPctg": 0.124088,
             "shorthandedGoals": 1,
             "shorthandedPoints": 3,
-            "shots": 135
+            "shots": 137
         }
     },
     {
-        "name": "Ville Heinola",
-        "sweater_number": 14,
-        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/WPG/8481572.png",
-        "position": "D",
+        "name": "Kasperi Kapanen",
+        "sweater_number": 42,
+        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/EDM/8477953.png",
+        "position": "R",
         "season_2024_2025": {
-            "assists": 1,
+            "assists": 4,
+            "gameWinningGoals": 2,
+            "gamesPlayed": 38,
+            "goals": 6,
+            "otGoals": 0,
+            "pim": 10,
+            "plusMinus": -9,
+            "points": 10,
+            "powerPlayGoals": 0,
+            "powerPlayPoints": 0,
+            "shootingPctg": 0.146341,
+            "shorthandedGoals": 0,
+            "shorthandedPoints": 0,
+            "shots": 41
+        }
+    },
+    {
+        "name": "Juha Jaaska",
+        "sweater_number": 54,
+        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/CAR/8484929.png",
+        "position": "L",
+        "season_2024_2025": {
+            "assists": 3,
             "gameWinningGoals": 0,
-            "gamesPlayed": 16,
+            "gamesPlayed": 14,
             "goals": 0,
             "otGoals": 0,
             "pim": 4,
-            "plusMinus": 7,
-            "points": 1,
+            "plusMinus": 3,
+            "points": 3,
             "powerPlayGoals": 0,
             "powerPlayPoints": 0,
             "shootingPctg": 0.0,
             "shorthandedGoals": 0,
-            "shorthandedPoints": 0,
-            "shots": 10
+            "shorthandedPoints": 1,
+            "shots": 11
         }
     },
     {
@@ -139,62 +95,18 @@
         "season_2024_2025": {
             "assists": 2,
             "gameWinningGoals": 1,
-            "gamesPlayed": 47,
-            "goals": 3,
+            "gamesPlayed": 49,
+            "goals": 4,
             "otGoals": 0,
             "pim": 16,
-            "plusMinus": -3,
-            "points": 5,
+            "plusMinus": -2,
+            "points": 6,
             "powerPlayGoals": 0,
             "powerPlayPoints": 0,
-            "shootingPctg": 0.076923,
+            "shootingPctg": 0.097561,
             "shorthandedGoals": 0,
             "shorthandedPoints": 0,
-            "shots": 39
-        }
-    },
-    {
-        "name": "Brad Lambert",
-        "sweater_number": 93,
-        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/WPG/8483471.png",
-        "position": "C",
-        "season_2024_2025": {
-            "assists": 0,
-            "gameWinningGoals": 0,
-            "gamesPlayed": 4,
-            "goals": 0,
-            "otGoals": 0,
-            "pim": 2,
-            "plusMinus": -1,
-            "points": 0,
-            "powerPlayGoals": 0,
-            "powerPlayPoints": 0,
-            "shootingPctg": 0.0,
-            "shorthandedGoals": 0,
-            "shorthandedPoints": 0,
-            "shots": 1
-        }
-    },
-    {
-        "name": "Jesperi Kotkaniemi",
-        "sweater_number": 82,
-        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/CAR/8480829.png",
-        "position": "C",
-        "season_2024_2025": {
-            "assists": 14,
-            "gameWinningGoals": 1,
-            "gamesPlayed": 50,
-            "goals": 10,
-            "otGoals": 0,
-            "pim": 37,
-            "plusMinus": 9,
-            "points": 24,
-            "powerPlayGoals": 0,
-            "powerPlayPoints": 1,
-            "shootingPctg": 0.126582,
-            "shorthandedGoals": 0,
-            "shorthandedPoints": 0,
-            "shots": 79
+            "shots": 41
         }
     },
     {
@@ -220,25 +132,113 @@
         }
     },
     {
-        "name": "Aleksander Barkov",
-        "sweater_number": 16,
-        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/FLA/8477493.png",
+        "name": "Jani Hakanp\u00e4\u00e4",
+        "sweater_number": 28,
+        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/TOR/8475825.png",
+        "position": "D",
+        "season_2024_2025": {
+            "assists": 0,
+            "gameWinningGoals": 0,
+            "gamesPlayed": 2,
+            "goals": 0,
+            "otGoals": 0,
+            "pim": 0,
+            "plusMinus": -1,
+            "points": 0,
+            "powerPlayGoals": 0,
+            "powerPlayPoints": 0,
+            "shootingPctg": 0.0,
+            "shorthandedGoals": 0,
+            "shorthandedPoints": 0,
+            "shots": 2
+        }
+    },
+    {
+        "name": "Jesperi Kotkaniemi",
+        "sweater_number": 82,
+        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/CAR/8480829.png",
         "position": "C",
         "season_2024_2025": {
-            "assists": 30,
+            "assists": 15,
             "gameWinningGoals": 1,
-            "gamesPlayed": 41,
-            "goals": 11,
-            "otGoals": 1,
-            "pim": 12,
-            "plusMinus": -2,
-            "points": 41,
+            "gamesPlayed": 52,
+            "goals": 10,
+            "otGoals": 0,
+            "pim": 37,
+            "plusMinus": 8,
+            "points": 25,
+            "powerPlayGoals": 0,
+            "powerPlayPoints": 1,
+            "shootingPctg": 0.125,
+            "shorthandedGoals": 0,
+            "shorthandedPoints": 0,
+            "shots": 80
+        }
+    },
+    {
+        "name": "Ville Heinola",
+        "sweater_number": 14,
+        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/WPG/8481572.png",
+        "position": "D",
+        "season_2024_2025": {
+            "assists": 1,
+            "gameWinningGoals": 0,
+            "gamesPlayed": 16,
+            "goals": 0,
+            "otGoals": 0,
+            "pim": 4,
+            "plusMinus": 7,
+            "points": 1,
+            "powerPlayGoals": 0,
+            "powerPlayPoints": 0,
+            "shootingPctg": 0.0,
+            "shorthandedGoals": 0,
+            "shorthandedPoints": 0,
+            "shots": 10
+        }
+    },
+    {
+        "name": "Brad Lambert",
+        "sweater_number": 93,
+        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/WPG/8483471.png",
+        "position": "C",
+        "season_2024_2025": {
+            "assists": 0,
+            "gameWinningGoals": 0,
+            "gamesPlayed": 4,
+            "goals": 0,
+            "otGoals": 0,
+            "pim": 2,
+            "plusMinus": -1,
+            "points": 0,
+            "powerPlayGoals": 0,
+            "powerPlayPoints": 0,
+            "shootingPctg": 0.0,
+            "shorthandedGoals": 0,
+            "shorthandedPoints": 0,
+            "shots": 1
+        }
+    },
+    {
+        "name": "Roope Hintz",
+        "sweater_number": 24,
+        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/DAL/8478449.png",
+        "position": "C",
+        "season_2024_2025": {
+            "assists": 13,
+            "gameWinningGoals": 5,
+            "gamesPlayed": 47,
+            "goals": 22,
+            "otGoals": 0,
+            "pim": 16,
+            "plusMinus": 9,
+            "points": 35,
             "powerPlayGoals": 5,
-            "powerPlayPoints": 15,
-            "shootingPctg": 0.122222,
+            "powerPlayPoints": 8,
+            "shootingPctg": 0.201835,
             "shorthandedGoals": 1,
-            "shorthandedPoints": 4,
-            "shots": 90
+            "shorthandedPoints": 2,
+            "shots": 109
         }
     },
     {
@@ -247,20 +247,64 @@
         "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/DAL/8480036.png",
         "position": "D",
         "season_2024_2025": {
-            "assists": 19,
+            "assists": 20,
             "gameWinningGoals": 0,
-            "gamesPlayed": 49,
+            "gamesPlayed": 50,
             "goals": 5,
             "otGoals": 0,
             "pim": 10,
-            "plusMinus": 6,
-            "points": 24,
+            "plusMinus": 7,
+            "points": 25,
             "powerPlayGoals": 0,
             "powerPlayPoints": 7,
-            "shootingPctg": 0.04717,
+            "shootingPctg": 0.046296,
             "shorthandedGoals": 0,
             "shorthandedPoints": 0,
-            "shots": 106
+            "shots": 108
+        }
+    },
+    {
+        "name": "Aleksander Barkov",
+        "sweater_number": 16,
+        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/FLA/8477493.png",
+        "position": "C",
+        "season_2024_2025": {
+            "assists": 30,
+            "gameWinningGoals": 1,
+            "gamesPlayed": 42,
+            "goals": 12,
+            "otGoals": 1,
+            "pim": 12,
+            "plusMinus": -2,
+            "points": 42,
+            "powerPlayGoals": 6,
+            "powerPlayPoints": 16,
+            "shootingPctg": 0.126316,
+            "shorthandedGoals": 1,
+            "shorthandedPoints": 4,
+            "shots": 95
+        }
+    },
+    {
+        "name": "Esa Lindell",
+        "sweater_number": 23,
+        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/DAL/8476902.png",
+        "position": "D",
+        "season_2024_2025": {
+            "assists": 13,
+            "gameWinningGoals": 0,
+            "gamesPlayed": 51,
+            "goals": 4,
+            "otGoals": 0,
+            "pim": 10,
+            "plusMinus": 19,
+            "points": 17,
+            "powerPlayGoals": 1,
+            "powerPlayPoints": 1,
+            "shootingPctg": 0.061538,
+            "shorthandedGoals": 0,
+            "shorthandedPoints": 0,
+            "shots": 65
         }
     },
     {
@@ -269,20 +313,20 @@
         "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/FLA/8480185.png",
         "position": "C",
         "season_2024_2025": {
-            "assists": 10,
+            "assists": 11,
             "gameWinningGoals": 2,
-            "gamesPlayed": 51,
+            "gamesPlayed": 52,
             "goals": 7,
             "otGoals": 0,
             "pim": 18,
-            "plusMinus": 6,
-            "points": 17,
+            "plusMinus": 7,
+            "points": 18,
             "powerPlayGoals": 0,
             "powerPlayPoints": 0,
-            "shootingPctg": 0.125,
+            "shootingPctg": 0.122807,
             "shorthandedGoals": 1,
             "shorthandedPoints": 2,
-            "shots": 56
+            "shots": 57
         }
     },
     {
@@ -293,18 +337,18 @@
         "season_2024_2025": {
             "assists": 5,
             "gameWinningGoals": 2,
-            "gamesPlayed": 51,
-            "goals": 10,
+            "gamesPlayed": 53,
+            "goals": 11,
             "otGoals": 0,
-            "pim": 12,
-            "plusMinus": 4,
-            "points": 15,
+            "pim": 14,
+            "plusMinus": 5,
+            "points": 16,
             "powerPlayGoals": 0,
             "powerPlayPoints": 0,
-            "shootingPctg": 0.172414,
+            "shootingPctg": 0.183333,
             "shorthandedGoals": 0,
             "shorthandedPoints": 0,
-            "shots": 58
+            "shots": 60
         }
     },
     {
@@ -330,69 +374,25 @@
         }
     },
     {
-        "name": "Esa Lindell",
-        "sweater_number": 23,
-        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/DAL/8476902.png",
-        "position": "D",
-        "season_2024_2025": {
-            "assists": 11,
-            "gameWinningGoals": 0,
-            "gamesPlayed": 49,
-            "goals": 4,
-            "otGoals": 0,
-            "pim": 10,
-            "plusMinus": 14,
-            "points": 15,
-            "powerPlayGoals": 1,
-            "powerPlayPoints": 1,
-            "shootingPctg": 0.061538,
-            "shorthandedGoals": 0,
-            "shorthandedPoints": 0,
-            "shots": 65
-        }
-    },
-    {
-        "name": "Niko Mikkola",
-        "sweater_number": 77,
-        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/FLA/8478859.png",
-        "position": "D",
-        "season_2024_2025": {
-            "assists": 12,
-            "gameWinningGoals": 0,
-            "gamesPlayed": 46,
-            "goals": 4,
-            "otGoals": 0,
-            "pim": 32,
-            "plusMinus": 7,
-            "points": 16,
-            "powerPlayGoals": 0,
-            "powerPlayPoints": 0,
-            "shootingPctg": 0.056338,
-            "shorthandedGoals": 0,
-            "shorthandedPoints": 0,
-            "shots": 71
-        }
-    },
-    {
-        "name": "Roope Hintz",
-        "sweater_number": 24,
-        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/DAL/8478449.png",
-        "position": "C",
+        "name": "Artturi Lehkonen",
+        "sweater_number": 62,
+        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/COL/8477476.png",
+        "position": "L",
         "season_2024_2025": {
             "assists": 9,
             "gameWinningGoals": 4,
-            "gamesPlayed": 45,
-            "goals": 20,
+            "gamesPlayed": 41,
+            "goals": 21,
             "otGoals": 0,
-            "pim": 16,
-            "plusMinus": 3,
-            "points": 29,
-            "powerPlayGoals": 5,
-            "powerPlayPoints": 8,
-            "shootingPctg": 0.190476,
-            "shorthandedGoals": 0,
-            "shorthandedPoints": 0,
-            "shots": 105
+            "pim": 14,
+            "plusMinus": 20,
+            "points": 30,
+            "powerPlayGoals": 1,
+            "powerPlayPoints": 2,
+            "shootingPctg": 0.238636,
+            "shorthandedGoals": 1,
+            "shorthandedPoints": 1,
+            "shots": 88
         }
     },
     {
@@ -403,7 +403,7 @@
         "season_2024_2025": {
             "assists": 21,
             "gameWinningGoals": 1,
-            "gamesPlayed": 50,
+            "gamesPlayed": 51,
             "goals": 12,
             "otGoals": 0,
             "pim": 24,
@@ -418,25 +418,25 @@
         }
     },
     {
-        "name": "Artturi Lehkonen",
-        "sweater_number": 62,
-        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/COL/8477476.png",
-        "position": "L",
+        "name": "Niko Mikkola",
+        "sweater_number": 77,
+        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/FLA/8478859.png",
+        "position": "D",
         "season_2024_2025": {
-            "assists": 8,
-            "gameWinningGoals": 4,
-            "gamesPlayed": 39,
-            "goals": 20,
+            "assists": 12,
+            "gameWinningGoals": 0,
+            "gamesPlayed": 47,
+            "goals": 4,
             "otGoals": 0,
-            "pim": 14,
-            "plusMinus": 19,
-            "points": 28,
-            "powerPlayGoals": 1,
-            "powerPlayPoints": 2,
-            "shootingPctg": 0.240964,
-            "shorthandedGoals": 1,
-            "shorthandedPoints": 1,
-            "shots": 83
+            "pim": 32,
+            "plusMinus": 8,
+            "points": 16,
+            "powerPlayGoals": 0,
+            "powerPlayPoints": 0,
+            "shootingPctg": 0.054795,
+            "shorthandedGoals": 0,
+            "shorthandedPoints": 0,
+            "shots": 73
         }
     },
     {
@@ -445,20 +445,20 @@
         "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/COL/8481704.png",
         "position": "C",
         "season_2024_2025": {
-            "assists": 5,
+            "assists": 6,
             "gameWinningGoals": 0,
-            "gamesPlayed": 29,
+            "gamesPlayed": 31,
             "goals": 4,
             "otGoals": 0,
             "pim": 6,
             "plusMinus": -6,
-            "points": 9,
+            "points": 10,
             "powerPlayGoals": 0,
             "powerPlayPoints": 1,
-            "shootingPctg": 0.222222,
+            "shootingPctg": 0.210526,
             "shorthandedGoals": 0,
             "shorthandedPoints": 0,
-            "shots": 18
+            "shots": 19
         }
     },
     {
@@ -467,13 +467,138 @@
         "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/BOS/8476914.png",
         "position": "G",
         "season_2024_2025": {
-            "gamesPlayed": 17,
-            "goalsAgainstAvg": 2.695361,
-            "losses": 4,
+            "gamesPlayed": 18,
+            "goalsAgainstAvg": 2.842386,
+            "losses": 5,
             "otLosses": 2,
-            "savePctg": 0.898824,
+            "savePctg": 0.893805,
             "shutouts": 3,
             "wins": 9
+        }
+    },
+    {
+        "name": "Mikael Pyyhtia",
+        "sweater_number": 82,
+        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/CBJ/8482451.png",
+        "position": "L",
+        "season_2024_2025": {
+            "assists": 2,
+            "gameWinningGoals": 0,
+            "gamesPlayed": 42,
+            "goals": 4,
+            "otGoals": 0,
+            "pim": 6,
+            "plusMinus": -9,
+            "points": 6,
+            "powerPlayGoals": 0,
+            "powerPlayPoints": 0,
+            "shootingPctg": 0.133333,
+            "shorthandedGoals": 1,
+            "shorthandedPoints": 1,
+            "shots": 30
+        }
+    },
+    {
+        "name": "Urho Vaakanainen",
+        "sweater_number": 18,
+        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/NYR/8480001.png",
+        "position": "D",
+        "season_2024_2025": {
+            "assists": 6,
+            "gameWinningGoals": 0,
+            "gamesPlayed": 25,
+            "goals": 0,
+            "otGoals": 0,
+            "pim": 10,
+            "plusMinus": 2,
+            "points": 6,
+            "powerPlayGoals": 0,
+            "powerPlayPoints": 0,
+            "shootingPctg": 0.0,
+            "shorthandedGoals": 0,
+            "shorthandedPoints": 0,
+            "shots": 14
+        }
+    },
+    {
+        "name": "Nikolas Matinpalo",
+        "sweater_number": 33,
+        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/OTT/8484321.png",
+        "position": "D",
+        "season_2024_2025": {
+            "assists": 0,
+            "gameWinningGoals": 0,
+            "gamesPlayed": 14,
+            "goals": 0,
+            "otGoals": 0,
+            "pim": 6,
+            "plusMinus": -3,
+            "points": 0,
+            "powerPlayGoals": 0,
+            "powerPlayPoints": 0,
+            "shootingPctg": 0.0,
+            "shorthandedGoals": 0,
+            "shorthandedPoints": 0,
+            "shots": 16
+        }
+    },
+    {
+        "name": "Joel Armia",
+        "sweater_number": 40,
+        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/MTL/8476469.png",
+        "position": "R",
+        "season_2024_2025": {
+            "assists": 14,
+            "gameWinningGoals": 0,
+            "gamesPlayed": 51,
+            "goals": 8,
+            "otGoals": 0,
+            "pim": 16,
+            "plusMinus": 2,
+            "points": 22,
+            "powerPlayGoals": 0,
+            "powerPlayPoints": 3,
+            "shootingPctg": 0.109589,
+            "shorthandedGoals": 1,
+            "shorthandedPoints": 1,
+            "shots": 73
+        }
+    },
+    {
+        "name": "Kevin Lankinen",
+        "sweater_number": 32,
+        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/VAN/8480947.png",
+        "position": "G",
+        "season_2024_2025": {
+            "gamesPlayed": 32,
+            "goalsAgainstAvg": 2.559466,
+            "losses": 8,
+            "otLosses": 6,
+            "savePctg": 0.905704,
+            "shutouts": 4,
+            "wins": 18
+        }
+    },
+    {
+        "name": "Patrik Laine",
+        "sweater_number": 92,
+        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/MTL/8479339.png",
+        "position": "R",
+        "season_2024_2025": {
+            "assists": 6,
+            "gameWinningGoals": 3,
+            "gamesPlayed": 23,
+            "goals": 12,
+            "otGoals": 1,
+            "pim": 6,
+            "plusMinus": -6,
+            "points": 18,
+            "powerPlayGoals": 10,
+            "powerPlayPoints": 11,
+            "shootingPctg": 0.2,
+            "shorthandedGoals": 0,
+            "shorthandedPoints": 0,
+            "shots": 60
         }
     },
     {
@@ -482,20 +607,20 @@
         "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/COL/8478420.png",
         "position": "R",
         "season_2024_2025": {
-            "assists": 39,
+            "assists": 40,
             "gameWinningGoals": 5,
-            "gamesPlayed": 50,
-            "goals": 25,
+            "gamesPlayed": 52,
+            "goals": 26,
             "otGoals": 0,
             "pim": 28,
-            "plusMinus": 13,
-            "points": 64,
+            "plusMinus": 15,
+            "points": 66,
             "powerPlayGoals": 8,
             "powerPlayPoints": 19,
-            "shootingPctg": 0.178571,
+            "shootingPctg": 0.175676,
             "shorthandedGoals": 0,
             "shorthandedPoints": 0,
-            "shots": 140
+            "shots": 148
         }
     },
     {
@@ -514,150 +639,47 @@
         }
     },
     {
-        "name": "Patrik Laine",
-        "sweater_number": 92,
-        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/MTL/8479339.png",
-        "position": "R",
-        "season_2024_2025": {
-            "assists": 6,
-            "gameWinningGoals": 3,
-            "gamesPlayed": 21,
-            "goals": 12,
-            "otGoals": 1,
-            "pim": 6,
-            "plusMinus": -4,
-            "points": 18,
-            "powerPlayGoals": 10,
-            "powerPlayPoints": 11,
-            "shootingPctg": 0.206897,
-            "shorthandedGoals": 0,
-            "shorthandedPoints": 0,
-            "shots": 58
-        }
-    },
-    {
-        "name": "Mikael Pyyhtia",
-        "sweater_number": 82,
-        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/CBJ/8482451.png",
-        "position": "L",
-        "season_2024_2025": {
-            "assists": 2,
-            "gameWinningGoals": 0,
-            "gamesPlayed": 40,
-            "goals": 4,
-            "otGoals": 0,
-            "pim": 6,
-            "plusMinus": -9,
-            "points": 6,
-            "powerPlayGoals": 0,
-            "powerPlayPoints": 0,
-            "shootingPctg": 0.142857,
-            "shorthandedGoals": 1,
-            "shorthandedPoints": 1,
-            "shots": 28
-        }
-    },
-    {
-        "name": "Kevin Lankinen",
-        "sweater_number": 32,
-        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/VAN/8480947.png",
-        "position": "G",
-        "season_2024_2025": {
-            "gamesPlayed": 31,
-            "goalsAgainstAvg": 2.577721,
-            "losses": 8,
-            "otLosses": 6,
-            "savePctg": 0.905162,
-            "shutouts": 4,
-            "wins": 17
-        }
-    },
-    {
-        "name": "Urho Vaakanainen",
-        "sweater_number": 18,
-        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/NYR/8480001.png",
-        "position": "D",
-        "season_2024_2025": {
-            "assists": 6,
-            "gameWinningGoals": 0,
-            "gamesPlayed": 24,
-            "goals": 0,
-            "otGoals": 0,
-            "pim": 10,
-            "plusMinus": 2,
-            "points": 6,
-            "powerPlayGoals": 0,
-            "powerPlayPoints": 0,
-            "shootingPctg": 0.0,
-            "shorthandedGoals": 0,
-            "shorthandedPoints": 0,
-            "shots": 13
-        }
-    },
-    {
-        "name": "Nikolas Matinpalo",
-        "sweater_number": 33,
-        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/OTT/8484321.png",
-        "position": "D",
-        "season_2024_2025": {
-            "assists": 0,
-            "gameWinningGoals": 0,
-            "gamesPlayed": 13,
-            "goals": 0,
-            "otGoals": 0,
-            "pim": 6,
-            "plusMinus": -2,
-            "points": 0,
-            "powerPlayGoals": 0,
-            "powerPlayPoints": 0,
-            "shootingPctg": 0.0,
-            "shorthandedGoals": 0,
-            "shorthandedPoints": 0,
-            "shots": 16
-        }
-    },
-    {
-        "name": "Joel Armia",
-        "sweater_number": 40,
-        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/MTL/8476469.png",
-        "position": "R",
-        "season_2024_2025": {
-            "assists": 14,
-            "gameWinningGoals": 0,
-            "gamesPlayed": 49,
-            "goals": 8,
-            "otGoals": 0,
-            "pim": 16,
-            "plusMinus": 2,
-            "points": 22,
-            "powerPlayGoals": 0,
-            "powerPlayPoints": 3,
-            "shootingPctg": 0.111111,
-            "shorthandedGoals": 1,
-            "shorthandedPoints": 1,
-            "shots": 72
-        }
-    },
-    {
         "name": "Rasmus Ristolainen",
         "sweater_number": 55,
         "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/PHI/8477499.png",
         "position": "D",
         "season_2024_2025": {
-            "assists": 11,
+            "assists": 13,
             "gameWinningGoals": 2,
-            "gamesPlayed": 50,
+            "gamesPlayed": 53,
             "goals": 2,
             "otGoals": 1,
-            "pim": 8,
-            "plusMinus": 1,
-            "points": 13,
+            "pim": 12,
+            "plusMinus": 3,
+            "points": 15,
             "powerPlayGoals": 0,
-            "powerPlayPoints": 1,
-            "shootingPctg": 0.027778,
+            "powerPlayPoints": 2,
+            "shootingPctg": 0.027397,
             "shorthandedGoals": 0,
             "shorthandedPoints": 0,
-            "shots": 72
+            "shots": 73
+        }
+    },
+    {
+        "name": "Olli Maatta",
+        "sweater_number": 2,
+        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/UTA/8476874.png",
+        "position": "D",
+        "season_2024_2025": {
+            "assists": 10,
+            "gameWinningGoals": 0,
+            "gamesPlayed": 48,
+            "goals": 1,
+            "otGoals": 0,
+            "pim": 12,
+            "plusMinus": 7,
+            "points": 11,
+            "powerPlayGoals": 0,
+            "powerPlayPoints": 0,
+            "shootingPctg": 0.022222,
+            "shorthandedGoals": 0,
+            "shorthandedPoints": 0,
+            "shots": 45
         }
     },
     {
@@ -673,161 +695,6 @@
             "savePctg": 0.899054,
             "shutouts": 0,
             "wins": 3
-        }
-    },
-    {
-        "name": "Matias Maccelli",
-        "sweater_number": 63,
-        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/UTA/8481711.png",
-        "position": "L",
-        "season_2024_2025": {
-            "assists": 9,
-            "gameWinningGoals": 0,
-            "gamesPlayed": 48,
-            "goals": 8,
-            "otGoals": 0,
-            "pim": 8,
-            "plusMinus": -10,
-            "points": 17,
-            "powerPlayGoals": 0,
-            "powerPlayPoints": 2,
-            "shootingPctg": 0.108108,
-            "shorthandedGoals": 0,
-            "shorthandedPoints": 0,
-            "shots": 74
-        }
-    },
-    {
-        "name": "Eeli Tolvanen",
-        "sweater_number": 20,
-        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/SEA/8480009.png",
-        "position": "R",
-        "season_2024_2025": {
-            "assists": 8,
-            "gameWinningGoals": 2,
-            "gamesPlayed": 50,
-            "goals": 12,
-            "otGoals": 0,
-            "pim": 10,
-            "plusMinus": -3,
-            "points": 20,
-            "powerPlayGoals": 1,
-            "powerPlayPoints": 4,
-            "shootingPctg": 0.15,
-            "shorthandedGoals": 0,
-            "shorthandedPoints": 0,
-            "shots": 80
-        }
-    },
-    {
-        "name": "Justus Annunen",
-        "sweater_number": 29,
-        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/NSH/8481020.png",
-        "position": "G",
-        "season_2024_2025": {
-            "gamesPlayed": 20,
-            "goalsAgainstAvg": 2.949044,
-            "losses": 6,
-            "otLosses": 0,
-            "savePctg": 0.894168,
-            "shutouts": 0,
-            "wins": 12
-        }
-    },
-    {
-        "name": "Kaapo Kakko",
-        "sweater_number": 84,
-        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/SEA/8481554.png",
-        "position": "R",
-        "season_2024_2025": {
-            "assists": 20,
-            "gameWinningGoals": 1,
-            "gamesPlayed": 47,
-            "goals": 8,
-            "otGoals": 0,
-            "pim": 30,
-            "plusMinus": 9,
-            "points": 28,
-            "powerPlayGoals": 2,
-            "powerPlayPoints": 4,
-            "shootingPctg": 0.111111,
-            "shorthandedGoals": 0,
-            "shorthandedPoints": 0,
-            "shots": 72
-        }
-    },
-    {
-        "name": "Olli Maatta",
-        "sweater_number": 2,
-        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/UTA/8476874.png",
-        "position": "D",
-        "season_2024_2025": {
-            "assists": 10,
-            "gameWinningGoals": 0,
-            "gamesPlayed": 46,
-            "goals": 1,
-            "otGoals": 0,
-            "pim": 12,
-            "plusMinus": 8,
-            "points": 11,
-            "powerPlayGoals": 0,
-            "powerPlayPoints": 0,
-            "shootingPctg": 0.022222,
-            "shorthandedGoals": 0,
-            "shorthandedPoints": 0,
-            "shots": 45
-        }
-    },
-    {
-        "name": "Juuse Saros",
-        "sweater_number": 74,
-        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/NSH/8477424.png",
-        "position": "G",
-        "season_2024_2025": {
-            "gamesPlayed": 37,
-            "goalsAgainstAvg": 2.881152,
-            "losses": 19,
-            "otLosses": 6,
-            "savePctg": 0.900198,
-            "shutouts": 4,
-            "wins": 11
-        }
-    },
-    {
-        "name": "Henri Jokiharju",
-        "sweater_number": 10,
-        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/BUF/8480035.png",
-        "position": "D",
-        "season_2024_2025": {
-            "assists": 3,
-            "gameWinningGoals": 1,
-            "gamesPlayed": 34,
-            "goals": 1,
-            "otGoals": 0,
-            "pim": 12,
-            "plusMinus": 3,
-            "points": 4,
-            "powerPlayGoals": 0,
-            "powerPlayPoints": 0,
-            "shootingPctg": 0.02439,
-            "shorthandedGoals": 0,
-            "shorthandedPoints": 0,
-            "shots": 41
-        }
-    },
-    {
-        "name": "Ukko-Pekka Luukkonen",
-        "sweater_number": 1,
-        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/BUF/8480045.png",
-        "position": "G",
-        "season_2024_2025": {
-            "gamesPlayed": 35,
-            "goalsAgainstAvg": 2.994219,
-            "losses": 15,
-            "otLosses": 4,
-            "savePctg": 0.896728,
-            "shutouts": 2,
-            "wins": 15
         }
     },
     {
@@ -853,25 +720,136 @@
         }
     },
     {
-        "name": "Teuvo Teravainen",
-        "sweater_number": 86,
-        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/CHI/8476882.png",
-        "position": "C",
+        "name": "Matias Maccelli",
+        "sweater_number": 63,
+        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/UTA/8481711.png",
+        "position": "L",
         "season_2024_2025": {
-            "assists": 23,
+            "assists": 9,
             "gameWinningGoals": 0,
             "gamesPlayed": 49,
-            "goals": 10,
+            "goals": 8,
             "otGoals": 0,
-            "pim": 6,
-            "plusMinus": -14,
-            "points": 33,
-            "powerPlayGoals": 5,
-            "powerPlayPoints": 16,
-            "shootingPctg": 0.140845,
+            "pim": 8,
+            "plusMinus": -11,
+            "points": 17,
+            "powerPlayGoals": 0,
+            "powerPlayPoints": 2,
+            "shootingPctg": 0.101266,
             "shorthandedGoals": 0,
-            "shorthandedPoints": 1,
-            "shots": 71
+            "shorthandedPoints": 0,
+            "shots": 79
+        }
+    },
+    {
+        "name": "Henri Jokiharju",
+        "sweater_number": 10,
+        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/BUF/8480035.png",
+        "position": "D",
+        "season_2024_2025": {
+            "assists": 3,
+            "gameWinningGoals": 1,
+            "gamesPlayed": 36,
+            "goals": 1,
+            "otGoals": 0,
+            "pim": 12,
+            "plusMinus": 6,
+            "points": 4,
+            "powerPlayGoals": 0,
+            "powerPlayPoints": 0,
+            "shootingPctg": 0.02381,
+            "shorthandedGoals": 0,
+            "shorthandedPoints": 0,
+            "shots": 42
+        }
+    },
+    {
+        "name": "Eeli Tolvanen",
+        "sweater_number": 20,
+        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/SEA/8480009.png",
+        "position": "R",
+        "season_2024_2025": {
+            "assists": 9,
+            "gameWinningGoals": 2,
+            "gamesPlayed": 53,
+            "goals": 15,
+            "otGoals": 0,
+            "pim": 10,
+            "plusMinus": 0,
+            "points": 24,
+            "powerPlayGoals": 1,
+            "powerPlayPoints": 4,
+            "shootingPctg": 0.174419,
+            "shorthandedGoals": 0,
+            "shorthandedPoints": 0,
+            "shots": 86
+        }
+    },
+    {
+        "name": "Juuse Saros",
+        "sweater_number": 74,
+        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/NSH/8477424.png",
+        "position": "G",
+        "season_2024_2025": {
+            "gamesPlayed": 38,
+            "goalsAgainstAvg": 2.858735,
+            "losses": 20,
+            "otLosses": 6,
+            "savePctg": 0.90029,
+            "shutouts": 4,
+            "wins": 11
+        }
+    },
+    {
+        "name": "Justus Annunen",
+        "sweater_number": 29,
+        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/NSH/8481020.png",
+        "position": "G",
+        "season_2024_2025": {
+            "gamesPlayed": 21,
+            "goalsAgainstAvg": 3.014456,
+            "losses": 7,
+            "otLosses": 0,
+            "savePctg": 0.891837,
+            "shutouts": 0,
+            "wins": 12
+        }
+    },
+    {
+        "name": "Kaapo Kakko",
+        "sweater_number": 84,
+        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/SEA/8481554.png",
+        "position": "R",
+        "season_2024_2025": {
+            "assists": 21,
+            "gameWinningGoals": 1,
+            "gamesPlayed": 50,
+            "goals": 8,
+            "otGoals": 0,
+            "pim": 30,
+            "plusMinus": 7,
+            "points": 29,
+            "powerPlayGoals": 2,
+            "powerPlayPoints": 4,
+            "shootingPctg": 0.106667,
+            "shorthandedGoals": 0,
+            "shorthandedPoints": 0,
+            "shots": 75
+        }
+    },
+    {
+        "name": "Ukko-Pekka Luukkonen",
+        "sweater_number": 1,
+        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/BUF/8480045.png",
+        "position": "G",
+        "season_2024_2025": {
+            "gamesPlayed": 37,
+            "goalsAgainstAvg": 2.966556,
+            "losses": 15,
+            "otLosses": 4,
+            "savePctg": 0.897683,
+            "shutouts": 2,
+            "wins": 17
         }
     },
     {
@@ -880,20 +858,42 @@
         "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/SJS/8475798.png",
         "position": "C",
         "season_2024_2025": {
-            "assists": 29,
+            "assists": 30,
             "gameWinningGoals": 1,
-            "gamesPlayed": 50,
-            "goals": 14,
+            "gamesPlayed": 52,
+            "goals": 15,
             "otGoals": 0,
             "pim": 20,
-            "plusMinus": -9,
-            "points": 43,
+            "plusMinus": -8,
+            "points": 45,
             "powerPlayGoals": 5,
             "powerPlayPoints": 15,
-            "shootingPctg": 0.115702,
+            "shootingPctg": 0.119048,
             "shorthandedGoals": 1,
             "shorthandedPoints": 1,
-            "shots": 121
+            "shots": 126
+        }
+    },
+    {
+        "name": "Teuvo Teravainen",
+        "sweater_number": 86,
+        "photo_link": "https://assets.nhle.com/mugs/nhl/20242025/CHI/8476882.png",
+        "position": "C",
+        "season_2024_2025": {
+            "assists": 23,
+            "gameWinningGoals": 0,
+            "gamesPlayed": 51,
+            "goals": 11,
+            "otGoals": 0,
+            "pim": 6,
+            "plusMinus": -15,
+            "points": 34,
+            "powerPlayGoals": 5,
+            "powerPlayPoints": 16,
+            "shootingPctg": 0.148649,
+            "shorthandedGoals": 0,
+            "shorthandedPoints": 1,
+            "shots": 74
         }
     }
 ]

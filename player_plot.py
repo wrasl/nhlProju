@@ -75,6 +75,13 @@ else:
     plt.title(f'{player_id} NHL Career Stats Over Seasons')
     plt.legend()
 
+    for i, txt in enumerate(goals):
+        plt.text(season_labels[i], goals[i] + 0.1, f"{txt}", color='black', ha='center', va='bottom')  # Text above the marker
+    for i, txt in enumerate(assists):
+        plt.text(season_labels[i], assists[i] + 0.1, f"{txt}", color='black', ha='center', va='bottom')  # Text above the marker
+    for i, txt in enumerate(points):
+        plt.text(season_labels[i], points[i] + 0.1, f"{txt}", color='black', ha='center', va='bottom')  # Text above the marker
+
     # Display the plot
     plt.xticks(rotation=45)  # Rotate the season labels if needed
     plt.grid(True)
