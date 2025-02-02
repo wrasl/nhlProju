@@ -46,6 +46,7 @@ def fetch_player_data(player_id):
         "sweater_number": sweater_number,
         "photo_link": photo_link,
         "position": position,
+        "playerID": player_id,
         "season_2024_2025": season_data
     }
 

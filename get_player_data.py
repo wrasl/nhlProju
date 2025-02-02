@@ -6,10 +6,10 @@ import json
 API_URL = "https://api-web.nhle.com/v1/"
 
 # JSON format
-response = requests.get(API_URL + "player/8481035/landing", params={"Content-Type": "application/json"})
+response = requests.get(API_URL + "player/8477424/landing", params={"Content-Type": "application/json"})
 data = response.json()
 
-with open("test_goalie", "w") as json_file:
+with open("test_turbo", "w") as json_file:
     json.dump(data, json_file, indent=4)
 
 print(data["firstName"]["default"], data["lastName"]["default"], data["birthCountry"])
