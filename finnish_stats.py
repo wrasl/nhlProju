@@ -43,6 +43,7 @@ for date in data["gameWeek"]:
             game_status = "Finished" if game['gameState'] == "OFF" else ("Ongoing" if game['gameState'] == "LIVE" else "Not played")
 
             game_info = {
+                "game_id": game["id"],
                 "homeTeam": game["homeTeam"]["abbrev"],
                 "awayTeam": game["awayTeam"]["abbrev"],
                 "score": (
@@ -72,6 +73,10 @@ if not finished_games:
 
 # Use game IDs to fetch info for all the players from the games played
 for game_id in GAME_IDS:
+
+    if not any(match["game_id"] == game_id for match in finished_games):
+        continue
+
     r = requests.get(API_URL + f"gamecenter/{game_id}/boxscore", params={"Content-Type": "application/json"})
     new_data = r.json()
 
@@ -101,6 +106,10 @@ with open("players.txt", "r") as file:
 
 # Loop through each game and fetch stats for Finnish players
 for game_id in GAME_IDS:
+
+    if not any(match["game_id"] == game_id for match in finished_games):
+        continue  # Skip if the game_id is not in the finished games
+
     r = requests.get(API_URL + f"gamecenter/{game_id}/boxscore", params={"Content-Type": "application/json"})
     new_data = r.json()
 
