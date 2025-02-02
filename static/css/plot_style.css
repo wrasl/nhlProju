@@ -1,0 +1,39 @@
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.plot-title {
+    display: flex;
+    flex-direction: column;  /* Stack the image above the title */
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.plot-title img {
+    border-radius: 50%;
+    max-width: 100px;
+    max-height: 100px;
+    margin-bottom: 20px; /* Space between image and title */
+}
+#plot {
+    display: block;
+    margin: 0 auto;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.return-button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.return-button:hover {
+    background-color: #0056b3;
+}

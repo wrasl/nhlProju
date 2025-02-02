@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Stats Visualization</title>
+    <link rel="stylesheet" href="/static/css/plot_style.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    
+    <body>
+        <div class="plot-title">
+            <img src="{{ player_headshot }}" alt="Player Headshot">
+            <h1>Player Stats Over Seasons</h1>
+        </div>
+        <div id="plot"></div>
+    
+        <!-- Return Button -->
+        <button class="return-button" onclick="window.location.href='/'">Return to Homepage</button>
+
+    <script>
+        // Correctly passing data from Flask to JavaScript with Jinja's tojson filter
+        var seasons = {{ seasons | tojson }};
+        var goals = {{ goals | tojson }};
+        var assists = {{ assists | tojson }};
+        var points = {{ points | tojson }};
+
+        var trace1 = {
+            x: seasons,
+            y: goals,
+            mode: 'lines+markers',
+            name: 'Goals'
+        };
+
+        var trace2 = {
+            x: seasons,
+            y: assists,
+            mode: 'lines+markers',
+            name: 'Assists'
+        };
+
+        var trace3 = {
+            x: seasons,
+            y: points,
+            mode: 'lines+markers',
+            name: 'Points'
+        };
+
+        var layout = {
+            title: '',
+            xaxis: { title: 'Seasons' },
+            yaxis: { title: 'Stats' }
+        };
+
+        // Check if data is not empty before rendering the plot
+        if (seasons.length > 0 && goals.length > 0 && assists.length > 0 && points.length > 0) {
+            var data = [trace1, trace2, trace3];
+            Plotly.newPlot('plot', data, layout);
+        } else {
+            console.error('Invalid data for plotting');
+        }
+    </script>
+</body>
+</html>

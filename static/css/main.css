@@ -1,0 +1,108 @@
+/* Basic styles for the table */
+:root {
+    --background-color: #121212;  /* Default background color for the body */
+    --row-color: #444444;  /* Default color for table rows */
+    --text-color: #E0E0E0;  /* Default text color */
+    --header-color: #333333;
+    --rowhover-color: #555555;
+    --button-color: #5D2F8E;
+}
+
+html {
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+}
+
+/* Apply the background color to the body */
+body {
+    height: 100%;
+    background-color: var(--background-color);  /* Use the background color variable */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: auto;  /* Allow the page to scroll */
+}
+
+/* Wraps the entire page's content */
+.page-container {
+    width: 100%;
+    margin: 20px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styling for the header */
+h1 {
+    text-align: center;
+    color: var(--text-color);  /* Set header text color to light */
+}
+
+/* Table styling */
+table {
+    width: 80%; /* Adjust table width */
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: var(--background-color);  /* Use background color variable */
+    border-radius: 8px; /* Rounded corners for the table */
+}
+
+/* Table headers and cells */
+th, td {
+    padding: 12px 20px; /* Increased padding for better spacing */
+    text-align: center;
+    border: 1px solid #444444;  /* Dark border for a cleaner look */
+    color: var(--text-color); /* Text color */
+}
+
+th {
+    background-color: var(--header-color); /* Dark header background */
+    color: #fff; /* White text for header */
+    cursor: pointer;
+}
+
+th:hover {
+    background-color: #555555; /* Slightly lighter header hover */
+}
+
+/* Table rows and hover effect */
+tr {
+    background-color: var(--row-color);  /* Use the row color variable */
+}
+
+tr:nth-child(even) {
+    background-color: #333333;  /* Darken even rows */
+}
+
+tr:hover {
+    background-color: var(--rowhover-color);  /* Highlight row on hover */
+}
+
+/* Player image styling */
+img {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;  /* Rounded player image */
+    transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+img:hover {
+    transform: scale(1.2);  /* Slight zoom effect on hover */
+}
+
+/* Optional: Styling for rows when selected or focused */
+tr.selected {
+    background-color: #666666;  /* Highlight selected row */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    table {
+        width: 100%;  /* Full width on smaller screens */
+    }
+    th, td {
+        padding: 10px 15px; /* Adjust padding for smaller screens */
+    }
+}
