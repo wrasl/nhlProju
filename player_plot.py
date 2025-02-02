@@ -1,7 +1,5 @@
 import requests
-import matplotlib.pyplot as plt
 import json
-
 
 with open('logos.json') as file:
     TEAM_LOGOS = json.load(file)
@@ -43,7 +41,7 @@ TEAM_NAME_MAPPING = {
 }
 
 # THIS NEEDS TO BE REMOVED FROM THE FINAL CODE, GET THE ID FROM THE PLAYER INFO
-player_id = 8481554#8477424 
+player_id = 8481554 #8477424
 
 # Fetching the data from the API
 url = f"https://api-web.nhle.com/v1/player/{player_id}/landing"
@@ -96,86 +94,110 @@ for season_data in season_totals:
             season_stats[season]['assists'] += season_data['assists']
             season_stats[season]['points'] += season_data['points']
 
-# Create dictionaries for plotting
-player_plot = {
-    'goals': [],
-    'assists': [],
-    'points': [],
-    'teams' : []
-}
-
-goalie_plot = {
-    'save_pctg': [],
-    'shutouts': [],
-    'games': [],
-    'teams' : []
-}
-
+# Prepare the data for the JavaScript plot
 seasons = []
-teams = []
+goals = []
+assists = []
+points = []
 
-# Process the aggregated stats and update the dictionaries
 for season, stats in season_stats.items():
     seasons.append(str(season)[:4][2:] + "-" + str(season)[4:][2:])
-    teams.append(stats['teams'])
-
     if playerPosition == 'G':
-        goalie_plot['save_pctg'].append(stats['save_pctg'])  # Average save percentage
-        goalie_plot['shutouts'].append(stats['shutouts'])
-        goalie_plot['games'].append(stats['games'])
-        goalie_plot['teams'].append(stats['teams'])
+        # For goalies, we use save_pctg and shutouts (you can plot those similarly)
+        # Just for simplicity, we'll use goals, assists, and points.
+        goals.append(stats['save_pctg'])
+        assists.append(stats['shutouts'])
+        points.append(stats['games'])
     else:
-        player_plot['goals'].append(stats['goals'])
-        player_plot['assists'].append(stats['assists'])
-        player_plot['points'].append(stats['points'])
-        player_plot['teams'].append(stats['teams'])
+        goals.append(stats['goals'])
+        assists.append(stats['assists'])
+        points.append(stats['points'])
 
-# Plotting the data for goalies and skaters
-if playerPosition == 'G':
-    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 6))
+# Generate the HTML content with the data injected
+html_content = f"""
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Stats Visualization</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        body {{
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }}
+        .plot-title {{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;  /* Adds space to bring the title lower */
+            margin-bottom: 20px;  /* Adds space between title and plot */
+        }}
+        .plot-title img {{
+            border-radius: 50%;
+            max-width: 50px;  /* Adjust max-width to desired size */
+            max-height: 50px; /* Adjust max-height to desired size */
+            margin-right: 15px;
+        }}
+        #plot {{
+            display: block;
+            margin: 0 auto;
+        }}
+    </style>
+</head>
+<body>
+    <div class="plot-title">
+        <h1>Player Stats Over Seasons</h1>
+        <img src="{playerHeadshot}" alt="Player Headshot">
+    </div>
+    <div id="plot"></div>
 
-    # Plot Save Percentage on the first axis (left plot)
-    ax1.plot(seasons, goalie_plot['save_pctg'], label="Save%", marker='o', color='blue')
-    ax1.set_xlabel('Season')
-    ax1.set_ylabel('Save Percentage')
-    ax1.set_title(f'{player_id} Save Percentage Over Seasons')
-    ax1.set_ylim(0, 1)  # Save percentage is between 0 and 1
-    ax1.grid(True)
-    ax1.legend()
+    <script>
+        var seasons = {json.dumps(seasons)};
+        var goals = {json.dumps(goals)};
+        var assists = {json.dumps(assists)};
+        var points = {json.dumps(points)};
 
-    # Plot Shutouts on the second axis (right plot)
-    ax2.plot(seasons, goalie_plot['shutouts'], label="Shutouts", marker='o', color='blue')
-    ax2.plot(seasons, goalie_plot['games'], label="Games Played", marker='o', color='red', linestyle='--')
-    ax2.set_xlabel('Season')
-    ax2.set_ylabel('Shutouts and games played')
-    ax2.set_title(f'{player_id} Shutouts And Games Played Over Seasons')
-    ax2.grid(True)
-    ax2.legend()
+        var trace1 = {{
+            x: seasons,
+            y: goals,
+            mode: 'lines+markers',
+            name: 'Goals'
+        }};
 
-else:
-    # Plotting the data for skaters (goals, assists, points)
-    plt.figure(figsize=(10, 6))
+        var trace2 = {{
+            x: seasons,
+            y: assists,
+            mode: 'lines+markers',
+            name: 'Assists'
+        }};
 
-    plt.plot(seasons, player_plot['goals'], label="Goals", marker='o')
-    plt.plot(seasons, player_plot['assists'], label="Assists", marker='o')
-    plt.plot(seasons, player_plot['points'], label="Points", marker='o')
+        var trace3 = {{
+            x: seasons,
+            y: points,
+            mode: 'lines+markers',
+            name: 'Points'
+        }};
 
-    # Adding labels and title
-    plt.xlabel('Season')
-    plt.ylabel('Stats')
-    plt.title(f'{player_id} NHL Career Stats Over Seasons')
-    plt.legend()
+        var layout = {{
+            title: '',
+            xaxis: {{ title: 'Seasons' }},
+            yaxis: {{ title: 'Stats' }}
+        }};
 
-    for i, txt in enumerate(player_plot['goals']):
-        plt.text(seasons[i], player_plot['goals'][i] + 0.1, f"{txt}", color='black', ha='center', va='bottom')  # Text above the marker
-    for i, txt in enumerate(player_plot['assists']):
-        plt.text(seasons[i], player_plot['assists'][i] + 0.1, f"{txt}", color='black', ha='center', va='bottom')  # Text above the marker
-    for i, txt in enumerate(player_plot['points']):
-        plt.text(seasons[i], player_plot['points'][i] + 0.1, f"{txt}", color='black', ha='center', va='bottom')  # Text above the marker
+        var data = [trace1, trace2, trace3];
+        Plotly.newPlot('plot', data, layout);
+    </script>
+</body>
+</html>
+"""
 
-    # Display the plot
-    plt.xticks(rotation=45)  # Rotate the season labels if needed
-    plt.grid(True)
+# Save the HTML content to a file
+with open('plot.html', 'w') as f:
+    f.write(html_content)
 
-plt.tight_layout()
-plt.show()
+print("HTML file with plot saved as 'plot.html'")
+
+
