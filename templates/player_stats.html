@@ -18,12 +18,18 @@
         <button class="return-button" onclick="window.location.href='/'">Return to Homepage</button>
 
     <script>
-        // Correctly passing data from Flask to JavaScript with Jinja's tojson filter
+        // Use Jinja's `tojson` to properly render Python lists as JSON.
         var seasons = {{ seasons | tojson }};
+        var seasons_key = {{ seasons_key | tojson }};
         var goals = {{ goals | tojson }};
         var assists = {{ assists | tojson }};
         var points = {{ points | tojson }};
+        var teamLogos = {{ team_logos | tojson }};  // Pass the logos data to JS
 
+        console.log(seasons_key);
+        console.log(teamLogos);
+
+        // Create traces for goals, assists, and points
         var trace1 = {
             x: seasons,
             y: goals,
@@ -45,19 +51,15 @@
             name: 'Points'
         };
 
+        // Plot layout configuration with annotations
         var layout = {
             title: '',
             xaxis: { title: 'Seasons' },
-            yaxis: { title: 'Stats' }
+            yaxis: { title: 'Stats' },
         };
 
-        // Check if data is not empty before rendering the plot
-        if (seasons.length > 0 && goals.length > 0 && assists.length > 0 && points.length > 0) {
-            var data = [trace1, trace2, trace3];
-            Plotly.newPlot('plot', data, layout);
-        } else {
-            console.error('Invalid data for plotting');
-        }
+        var data = [trace1, trace2, trace3];
+        Plotly.newPlot('plot', data, layout);
     </script>
 </body>
 </html>
