@@ -74,6 +74,10 @@ def player_stats(player_id):
     assists = [stats['assists'] if player_position != 'G' else stats['shutouts'] for stats in season_stats.values()]
     points = [stats['points'] if player_position != 'G' else stats['games'] for stats in season_stats.values()]
 
+    avg_goals = sum(goals) / len(goals) if goals else 0
+    avg_assists = sum(assists) / len(assists) if assists else 0
+    avg_points = sum(points) / len(points) if points else 0
+
     # Render the template for the player stats page
     return render_template('player_stats.html', 
                            player_id=player_id, 
@@ -83,7 +87,10 @@ def player_stats(player_id):
                            goals=goals, 
                            assists=assists, 
                            points=points,
-                           team_logos=team_logos)
+                           team_logos=team_logos,
+                           avg_goals=avg_goals,
+                           avg_assists=avg_assists,
+                           avg_points=avg_points)
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -24,7 +24,10 @@
         var goals = {{ goals | tojson }};
         var assists = {{ assists | tojson }};
         var points = {{ points | tojson }};
-        var teamLogos = {{ team_logos | tojson }};  // Pass the logos data to JS
+        var teamLogos = {{ team_logos | tojson }}; 
+        var avgGoals = {{ avg_goals }};
+        var avgAssists = {{ avg_assists }};
+        var avgPoints = {{ avg_points }};
 
         console.log(seasons_key);
         console.log(teamLogos);
@@ -34,29 +37,103 @@
             x: seasons,
             y: goals,
             mode: 'lines+markers',
-            name: 'Goals'
+            name: 'Goals',
+            line: { color:'red', width: 4 },
+            marker: { size: 10 }
         };
 
         var trace2 = {
             x: seasons,
             y: assists,
             mode: 'lines+markers',
-            name: 'Assists'
+            name: 'Assists',
+            line: { color:'blue', width: 4 },
+            marker: { size: 10 }
         };
 
         var trace3 = {
             x: seasons,
             y: points,
             mode: 'lines+markers',
-            name: 'Points'
+            name: 'Points',
+            line: { color:'yellow', width: 4 },
+            marker: { size: 10 }
         };
 
-        // Plot layout configuration with annotations
         var layout = {
             title: '',
             xaxis: { title: 'Seasons' },
             yaxis: { title: 'Stats' },
+            shapes: [
+                {
+                    type: 'line',
+                    x0: 0,
+                    x1: seasons.length - 1,
+                    y0: avgGoals, 
+                    y1: avgGoals,
+                    line: {
+                        color: 'red',
+                        width: 2,
+                        dash: 'dashdot'
+                    },
+                    name: 'Average Goals'
+                },
+                {
+                    type: 'line',
+                    x0: 0,
+                    x1: seasons.length - 1,
+                    y0: avgAssists,
+                    y1: avgAssists,
+                    line: {
+                        color: 'blue',
+                        width: 2,
+                        dash: 'dashdot'
+                    },
+                    name: 'Average Assists'
+                },
+                {
+                    type: 'line',
+                    x0: 0,
+                    x1: seasons.length - 1,
+                    y0: avgPoints,
+                    y1: avgPoints,
+                    line: {
+                        color: 'yellow',
+                        width: 2,
+                        dash: 'dashdot'
+                    },
+                    name: 'Average Points'
+                }
+            ],
+
+            annotations: [
+            {
+                x: seasons.length,
+                y: avgGoals,
+                text: `Avg Goals: ${avgGoals.toFixed(2)}`, 
+                showarrow: false,
+                font: { size: 12, color: 'black' },
+                align: 'left'
+            },
+            {
+                x: seasons.length,
+                y: avgAssists,
+                text: `Avg Assists: ${avgAssists.toFixed(2)}`, 
+                showarrow: false,
+                font: { size: 12, color: 'black' },
+                align: 'left'
+            },
+            {
+                x: seasons.length,
+                y: avgPoints,
+                text: `Avg Points: ${avgPoints.toFixed(2)}`, 
+                showarrow: false,
+                font: { size: 12, color: 'black' },
+                align: 'left'
+            }
+        ]
         };
+
 
         var data = [trace1, trace2, trace3];
         Plotly.newPlot('plot', data, layout);
