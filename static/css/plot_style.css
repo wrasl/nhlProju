@@ -16,6 +16,10 @@ body {
     max-height: 100px;
     margin-bottom: 20px; /* Space between image and title */
 }
+.player-info {
+    font-size: 18px;
+    font-weight: bold;
+}
 #plot {
     display: block;
     margin: 0 auto;

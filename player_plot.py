@@ -51,6 +51,13 @@ response = requests.get(url, headers=headers)
 # Check if the response is successful
 if response.status_code == 200:
     data = response.json()
+
+    # Save the data to a file called test.json
+    with open('test.json', 'w') as json_file:
+        json.dump(data, json_file, indent=4)
+
+    exit()
+
 else:
     print(f"Failed to retrieve data: {response.status_code}")
     exit()

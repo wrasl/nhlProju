@@ -31,6 +31,8 @@ def player_stats(player_id):
     season_totals = data['seasonTotals']
     player_position = data['position']
     player_headshot = data['headshot']
+    player_name = f"{data['firstName']['default']} {data['lastName']['default']}"
+    player_number = data['sweaterNumber']
 
     season_stats = {}
     team_logos = {}
@@ -81,6 +83,8 @@ def player_stats(player_id):
     # Render the template for the player stats page
     return render_template('player_stats.html', 
                            player_id=player_id, 
+                           player_name=player_name,
+                           player_number=player_number,
                            player_headshot=player_headshot, 
                            seasons=seasons,
                            seasons_key=seasons_key, 
