@@ -63,7 +63,7 @@ with ThreadPoolExecutor(max_workers=10) as executor:
         print("Player saved.")
 
 # Save all the Finnish players' season data to a JSON file
-with open("season_20242025.json", "w") as f:
+with open("static/season_20242025.json", "w") as f:
     json.dump(all_season_data, f, indent=4)
 
 print("Season data for 2024-2025 has been saved to season_20242025.json")
