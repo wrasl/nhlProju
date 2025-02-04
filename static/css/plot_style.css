@@ -20,7 +20,17 @@ body {
     font-size: 18px;
     font-weight: bold;
 }
-#plot {
+.player-info .player-name {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.player-info .player-number {
+    font-size: 1.2em;
+    color: #888;
+    display: block;
+    margin-top: 5px;
+}#plot {
     display: block;
     margin: 0 auto;
     height: 600px;

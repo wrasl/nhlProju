@@ -58,7 +58,7 @@ for date in data["gameWeek"]:
             MATCHES.append(game_info)
 
 # Write matches data to a JSON file
-with open("matches.json", "w") as f:
+with open("static/matches.json", "w") as f:
     json.dump(MATCHES, f, indent=4)
 
 print("Matches saved to matches.json")
@@ -69,7 +69,11 @@ finished_games = [match for match in MATCHES if match["status"] == "Finished"]
 # If no finished games, return early and print a message
 if not finished_games:
     print("No games have been played yet. Exiting without fetching player data.")
-    exit()  # Exit the script here
+
+    with open('static/finnish_players.json', 'w') as json_file:
+        json.dump([], json_file, indent=4)
+
+    exit()
 
 # Use game IDs to fetch info for all the players from the games played
 for game_id in GAME_IDS:
@@ -165,7 +169,7 @@ output_data = {
 }
 
 # Save the data to a JSON file
-with open('finnish_players.json', 'w') as json_file:
+with open('static/finnish_players.json', 'w') as json_file:
     json.dump(output_data, json_file, indent=4)
 
 print("Player data has been saved to finnish_players.json")
