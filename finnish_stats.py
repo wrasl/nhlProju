@@ -58,7 +58,7 @@ for date in data["gameWeek"]:
             MATCHES.append(game_info)
 
 # Write matches data to a JSON file
-with open("static/matches.json", "w") as f:
+with open("matches.json", "w") as f:
     json.dump(MATCHES, f, indent=4)
 
 print("Matches saved to matches.json")
@@ -169,7 +169,7 @@ output_data = {
 }
 
 # Save the data to a JSON file
-with open('static/finnish_players.json', 'w') as json_file:
+with open('finnish_players.json', 'w') as json_file:
     json.dump(output_data, json_file, indent=4)
 
 print("Player data has been saved to finnish_players.json")
