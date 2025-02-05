@@ -43,53 +43,52 @@
 
     <h1 style="text-align:center; margin-top: 20px;">NHL Finnish Players Stats (2024-2025)</h1>
     
-    <h2 style="text-align:center;">Forwards Table</h2>
+    <h2 style="text-align:center;">Player Table</h2>
     <table id="playersTable">
         <thead>
             <tr>
                 <th>Image</th>
                 <th onclick="sortTable(1)">Name</th>
-                <th onclick="sortTable(2)">#Number</th>
-                <th onclick="sortTable(3)">Goals</th>
-                <th onclick="sortTable(4)">Assists</th>
-                <th onclick="sortTable(5)">Points</th>
-                <th onclick="sortTable(6)">Games Played</th>
-                <th onclick="sortTable(7)">PIM</th>
-                <th onclick="sortTable(8)">Plus/Minus</th>
-                <th onclick="sortTable(9)">GWG</th>
-                <th onclick="sortTable(10)">OT Goals</th>
-                <th onclick="sortTable(11)">PP Goals</th>
-                <th onclick="sortTable(12)">PP Points</th>
-                <th onclick="sortTable(13)">SH Goals</th>
-                <th onclick="sortTable(14)">SH Points</th>
-                <th onclick="sortTable(15)">Shots</th>
+                <th onclick="sortTable(2)">Goals</th>
+                <th onclick="sortTable(3)">Assists</th>
+                <th onclick="sortTable(4)">Points</th>
+                <th onclick="sortTable(5)">Games Played</th>
+                <th onclick="sortTable(6)">PIM</th>
+                <th onclick="sortTable(7)">Plus/Minus</th>
+                <th onclick="sortTable(8)">GWG</th>
+                <th onclick="sortTable(9)">OT Goals</th>
+                <th onclick="sortTable(10)">PP Goals</th>
+                <th onclick="sortTable(11)">PP Points</th>
+                <th onclick="sortTable(12)">SH Goals</th>
+                <th onclick="sortTable(13)">SH Points</th>
+                <th onclick="sortTable(14)">Shots</th>
             </tr>
         </thead>
         <tbody>
             <!-- Forwards rows will be inserted here by JavaScript -->
         </tbody>
     </table>
-
-    <h2 style="text-align:center;">Goalies Table</h2>
+    
+    <h2 style="text-align:center;">Goalie Table</h2>
     <table id="goaliesTable">
         <thead>
             <tr>
                 <th>Image</th>
                 <th onclick="sortTableGoalies(1)">Name</th>
-                <th onclick="sortTableGoalies(2)">#Number</th>
-                <th onclick="sortTableGoalies(3)">Games Played</th>
-                <th onclick="sortTableGoalies(4)">Goals Against Avg</th>
-                <th onclick="sortTableGoalies(5)">Losses</th>
-                <th onclick="sortTableGoalies(6)">OT Losses</th>
-                <th onclick="sortTableGoalies(7)">Save %</th>
-                <th onclick="sortTableGoalies(8)">Shutouts</th>
-                <th onclick="sortTableGoalies(9)">Wins</th>
+                <th onclick="sortTableGoalies(2)">Games Played</th>
+                <th onclick="sortTableGoalies(3)">Goals Against Avg</th>
+                <th onclick="sortTableGoalies(4)">Losses</th>
+                <th onclick="sortTableGoalies(5)">OT Losses</th>
+                <th onclick="sortTableGoalies(6)">Save %</th>
+                <th onclick="sortTableGoalies(7)">Shutouts</th>
+                <th onclick="sortTableGoalies(8)">Wins</th>
             </tr>
         </thead>
         <tbody>
             <!-- Goalies rows will be inserted here by JavaScript -->
         </tbody>
     </table>
+    
 
     <script>
         // Load the JSON data dynamically
@@ -103,6 +102,20 @@
                 const forwards = data.filter(player => player.position !== 'G');
                 const goalies = data.filter(player => player.position === 'G');
 
+                // Sort forwards by points (descending order)
+                forwards.sort((a, b) => {
+                    const pointsA = a.season_2024_2025.points;
+                    const pointsB = b.season_2024_2025.points;
+                    return pointsB - pointsA; // Descending order
+                });
+
+                // Optionally sort goalies by wins or another stat (if needed)
+                goalies.sort((a, b) => {
+                    const winsA = a.season_2024_2025.wins;
+                    const winsB = b.season_2024_2025.wins;
+                    return winsB - winsA; // Descending order
+                });
+
                 // Function to generate player rows (forwards)
                 function generateRows(players, tableBody) {
                     tableBody.innerHTML = '';  // Clear existing rows
@@ -111,8 +124,12 @@
                         const row = document.createElement('tr');
                         row.innerHTML = `
                             <td><a href="/player/${player.playerID}"><img src="${player.photo_link}" alt="${player.name}"></a></td>
-                            <td>${player.name}</td>
-                            <td>${player.sweater_number}</td>
+                            <td>
+                                <div style="text-align: center;">
+                                    <span>${player.name}</span><br>
+                                    <span style="color: #888; font-size: 0.9em;">#${player.sweater_number}</span>
+                                </div>
+                            </td>
                             <td>${playerStats.goals}</td>
                             <td>${playerStats.assists}</td>
                             <td>${playerStats.points}</td>
@@ -139,8 +156,7 @@
                         const row = document.createElement('tr');
                         row.innerHTML = `
                             <td><img src="${player.photo_link}" alt="${player.name}"></td>
-                            <td>${player.name}</td>
-                            <td>${player.sweater_number}</td>
+                            <td>${player.name} #${player.sweater_number}</td>
                             <td>${playerStats.gamesPlayed}</td>
                             <td>${playerStats.goalsAgainstAvg.toFixed(2)}</td>
                             <td>${playerStats.losses}</td>
@@ -158,19 +174,27 @@
                 generateGoalieRows(goalies, goaliesTableBody);
 
                 // Sorting logic for forwards
-                let forwardsSortOrder = Array(16).fill(true);  // True = ascending, false = descending
+                let forwardsSortOrder = Array(16).fill(false);  // True = ascending, false = descending
 
                 window.sortTable = function (colIndex) {
                     const rows = Array.from(forwardsTableBody.rows);
-                    const isNumeric = colIndex > 2 && colIndex < 16; // Numeric columns
+                    const isNumeric = colIndex > 1 && colIndex < 15; // Numeric columns start from index 2 and go up to 14
 
                     rows.sort((rowA, rowB) => {
                         const cellA = rowA.cells[colIndex].textContent.trim();
                         const cellB = rowB.cells[colIndex].textContent.trim();
-                        let valA = isNumeric ? parseFloat(cellA) : cellA.toLowerCase();
-                        let valB = isNumeric ? parseFloat(cellB) : cellB.toLowerCase();
+                        let valA, valB;
 
-                        // Toggle sorting based on direction
+                        // If the column is numeric (like Goals), parse it as a float for comparison
+                        if (isNumeric) {
+                            valA = parseFloat(cellA) || 0; // Default to 0 if parsing fails (e.g., empty value)
+                            valB = parseFloat(cellB) || 0;
+                        } else {
+                            valA = cellA.toLowerCase();
+                            valB = cellB.toLowerCase();
+                        }
+
+                        // Toggle sorting direction
                         if (forwardsSortOrder[colIndex]) {
                             return valA > valB ? 1 : valA < valB ? -1 : 0;
                         } else {
@@ -186,7 +210,7 @@
                 };
 
                 // Sorting logic for goalies
-                let goaliesSortOrder = Array(10).fill(true);  // True = ascending, false = descending
+                let goaliesSortOrder = Array(9).fill(true);  // True = ascending, false = descending
 
                 window.sortTableGoalies = function (colIndex) {
                     const rows = Array.from(goaliesTableBody.rows);
@@ -216,6 +240,7 @@
             .catch(error => {
                 console.error('Error loading the JSON data:', error);
             });
+
     </script>
 
 </body>
