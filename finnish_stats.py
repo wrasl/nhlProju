@@ -11,6 +11,7 @@ import requests
 from datetime import datetime, timedelta
 import time
 import json
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 start = time.time()
 
@@ -108,15 +109,14 @@ with open("players.txt", "r") as file:
         if nationality == "FIN":
             FINNISH_PLAYERS[playerid] = photo_link
 
-# Loop through each game and fetch stats for Finnish players
-for game_id in GAME_IDS:
-
-    if not any(match["game_id"] == game_id for match in finished_games):
-        continue  # Skip if the game_id is not in the finished games
-
+# Function to fetch stats for Finnish players in a game
+def fetch_game_stats(game_id):
     r = requests.get(API_URL + f"gamecenter/{game_id}/boxscore", params={"Content-Type": "application/json"})
     new_data = r.json()
 
+    game_stats = []
+
+    # Loop through teams and player categories
     for team in teams:
         for category in player_categories:
             for player in new_data["playerByGameStats"][team][category]:
@@ -155,12 +155,28 @@ for game_id in GAME_IDS:
                             'photo_link': photo_link
                         })
 
-                    # Append the player data to the list
-                    PLAYERS.append(wanted_data)
+                    game_stats.append(wanted_data)
+
+    return game_stats
+
+
+# Using ThreadPoolExecutor to fetch stats concurrently
+with ThreadPoolExecutor(max_workers=10) as executor:
+    futures = {executor.submit(fetch_game_stats, game_id): game_id for game_id in GAME_IDS if any(match["game_id"] == game_id for match in finished_games)}
+
+    all_player_stats = []
+
+    # Collect results as they complete
+    for future in as_completed(futures):
+        try:
+            game_stats = future.result()
+            all_player_stats.extend(game_stats)
+        except Exception as exc:
+            print(f"Error fetching stats for game {futures[future]}: {exc}")
 
 # Separate forwards/defense and goalies
-forwards_and_defense = [stats for stats in PLAYERS if stats['position'] != 'G']
-goalies = [stats for stats in PLAYERS if stats['position'] == 'G']
+forwards_and_defense = [stats for stats in all_player_stats if stats['position'] != 'G']
+goalies = [stats for stats in all_player_stats if stats['position'] == 'G']
 
 # Structure the output data
 output_data = {
@@ -177,7 +193,7 @@ print("Player data has been saved to finnish_players.json")
 end = time.time()
 
 # Show the results: this can be altered however you like
-if not PLAYERS:
+if not all_player_stats:
     print("No Finnish players played in today's games.")
 
 print("It took", int(end - start), "seconds!")
