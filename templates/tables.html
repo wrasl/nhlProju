@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Player Stats Table</title>
-    
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -37,9 +36,33 @@
         tr:hover {
             background-color: #ddd;
         }
+        .button-container {
+            margin: 20px;
+            text-align: left;
+        }
+        .btn {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 <body>
+
+    <div class="button-container">
+        <a href="/matches_stats" class="btn">View Match Stats</a>
+    </div>
+
+    <div class="button-container">
+        <button id="update_player_data" class="btn">Update Player Data</button>
+    </div>
 
     <h1 style="text-align:center; margin-top: 20px;">NHL Finnish Players Stats (2024-2025)</h1>
     
@@ -240,6 +263,21 @@
             .catch(error => {
                 console.error('Error loading the JSON data:', error);
             });
+
+        document.getElementById('update_player_data').addEventListener('click', function() {
+            // Send a GET request to the /update_player_data route
+            fetch('/update_player_data', {
+                method: 'GET'
+            })
+            .then(response => response.text())
+            .then(data => {
+                alert(data);  // Show the response message
+                location.reload();
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        });
 
     </script>
 
