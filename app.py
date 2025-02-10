@@ -4,7 +4,7 @@ import json
 
 app = Flask(__name__)
 
-# with open('logos.json', 'r') as f:
+# with open('/static/logos.json', 'r') as f:
 #    logos_data = json.load(f)
 
 @app.route('/')
