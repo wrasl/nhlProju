@@ -1,5 +1,5 @@
 TODO
 
-Goalie plotting
-Team logo for season
+Goalie plotting,
+Team logo for season,
 Possible Playoff stats
