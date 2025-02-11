@@ -184,7 +184,10 @@ def fetch_matches_players():
     print("It took", int(end - start), "seconds!")
 
 def all_stats():
-
+     """
+    Fetch data for player for his current season, 
+    and all previous seasons he has played in the NHL.
+    """
     import requests
     import time
     import json
