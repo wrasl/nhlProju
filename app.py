@@ -16,11 +16,15 @@ def matches():
 
     from util import fetch_matches_players
 
-    fetch_matches_players()
+    try:
+        fetch_matches_players()
+    except ValueError as e:
+        print(e)
+        return render_template('tables.html')
 
     with open('static/matches.json', 'r') as f:
         matches = json.load(f)
-
+                               
     with open('static/finnish_players.json', 'r') as f:
         finnish_players = json.load(f)
 

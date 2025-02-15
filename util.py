@@ -12,6 +12,7 @@ def fetch_matches_players():
     from datetime import datetime, timedelta
     import time
     import json
+    from flask import render_template
 
     start = time.time()
 
@@ -64,15 +65,15 @@ def fetch_matches_players():
 
     print("Matches saved to matches.json")
 
+    if not MATCHES:
+        raise ValueError("No matches found")
+
     # Check if there are any finished games
     finished_games = [match for match in MATCHES if match["status"] == "Finished"]
 
     # If no finished games, return early and print a message
     if not finished_games:
         print("No games have been played yet. Exiting without fetching player data.")
-
-        with open('static/finnish_players.json', 'w') as json_file:
-            json.dump([], json_file, indent=4)
 
         exit()
 
@@ -184,7 +185,7 @@ def fetch_matches_players():
     print("It took", int(end - start), "seconds!")
 
 def all_stats():
-     """
+    """
     Fetch data for player for his current season, 
     and all previous seasons he has played in the NHL.
     """
