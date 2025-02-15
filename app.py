@@ -24,6 +24,7 @@ def matches():
 
     with open('static/matches.json', 'r') as f:
         matches = json.load(f)
+        print("loaded")
                                
     with open('static/finnish_players.json', 'r') as f:
         finnish_players = json.load(f)
